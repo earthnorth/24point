@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,149 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_4_point" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="qxk-OI-hKV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rEF-DI-tho" userLabel="calculateStackView">
+                                <rect key="frame" x="20" y="120" width="280" height="28"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fh4-Zb-UNP" userLabel="plusButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="28"/>
+                                        <state key="normal" image="plus"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lb-1Z-Hvh" userLabel="minusButton">
+                                        <rect key="frame" x="77.5" y="0.0" width="47.5" height="28"/>
+                                        <state key="normal" image="minus"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lI-ul-2sf" userLabel="crossButton">
+                                        <rect key="frame" x="155" y="0.0" width="47.5" height="28"/>
+                                        <state key="normal" image="cross"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lx-qW-DhJ" userLabel="divideButton">
+                                        <rect key="frame" x="232.5" y="0.0" width="47.5" height="28"/>
+                                        <state key="normal" image="divide"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aJc-TZ-xtd" userLabel="poker1-2StackView">
+                                <rect key="frame" x="50" y="168" width="220" height="150"/>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1-clubs" translatesAutoresizingMaskIntoConstraints="NO" id="cQ3-4Y-lCA" userLabel="poker1">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="150"/>
+                                    </imageView>
+                                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="1-diamonds" translatesAutoresizingMaskIntoConstraints="NO" id="cHI-LT-y7M" userLabel="poker2">
+                                        <rect key="frame" x="115" y="0.0" width="105" height="150"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cj2-zR-N0U" userLabel="poker3-4StackView">
+                                <rect key="frame" x="50" y="338" width="220" height="150"/>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="2-spades" translatesAutoresizingMaskIntoConstraints="NO" id="bpM-HQ-YpS" userLabel="poker3">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="150"/>
+                                    </imageView>
+                                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12-hearts" translatesAutoresizingMaskIntoConstraints="NO" id="rBT-Vv-Ddl" userLabel="poker4">
+                                        <rect key="frame" x="115" y="0.0" width="105" height="150"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="B5l-ez-Rfd" userLabel="controlStackView">
+                                <rect key="frame" x="78" y="508" width="164" height="28"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Unq-aI-AqN" userLabel="binButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
+                                        <state key="normal" image="bin"/>
+                                        <connections>
+                                            <action selector="binResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sgh-DO-7NI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5he-CC-tfQ" userLabel="loopButton">
+                                        <rect key="frame" x="71" y="0.0" width="28" height="28"/>
+                                        <state key="normal" image="loop"/>
+                                        <connections>
+                                            <action selector="refreshButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U0R-II-UXh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hb-sx-kSF" userLabel="helpButton">
+                                        <rect key="frame" x="147" y="0.0" width="17" height="28"/>
+                                        <state key="normal" image="question"/>
+                                        <connections>
+                                            <action selector="help:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aN4-d9-g6J"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="24 Point" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iP3-Px-bsC">
+                                <rect key="frame" x="20" y="23" width="280" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.90000000000000002" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Ej-zA-olX" userLabel="helpLabel">
+                                <rect key="frame" x="10" y="56" width="307" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Label
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iP3-Px-bsC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2qj-9Y-b6h"/>
+                            <constraint firstItem="iP3-Px-bsC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="3fm-b0-Nnp"/>
+                            <constraint firstItem="cj2-zR-N0U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="4ro-zC-ZxJ"/>
+                            <constraint firstItem="B5l-ez-Rfd" firstAttribute="top" secondItem="cj2-zR-N0U" secondAttribute="bottom" constant="20" id="59d-DA-PGR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iP3-Px-bsC" secondAttribute="trailing" constant="20" id="831-49-Gg2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iP3-Px-bsC" secondAttribute="trailing" symbolic="YES" id="Qdj-AF-pX8"/>
+                            <constraint firstItem="aJc-TZ-xtd" firstAttribute="top" secondItem="rEF-DI-tho" secondAttribute="bottom" constant="20" id="RYn-c2-vD6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rEF-DI-tho" secondAttribute="trailing" constant="20" id="Sfe-nV-8QV"/>
+                            <constraint firstItem="B5l-ez-Rfd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="TvY-gj-zNO"/>
+                            <constraint firstItem="rEF-DI-tho" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Wz6-pH-Frr"/>
+                            <constraint firstItem="aJc-TZ-xtd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="YHX-Cu-S7S"/>
+                            <constraint firstItem="rEF-DI-tho" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YfL-ET-gH4"/>
+                            <constraint firstItem="rEF-DI-tho" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="bUK-Kp-Kye"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cj2-zR-N0U" secondAttribute="trailing" constant="50" id="o1K-7V-jWp"/>
+                            <constraint firstItem="iP3-Px-bsC" firstAttribute="leading" secondItem="rEF-DI-tho" secondAttribute="leading" id="o7w-Ot-rbP"/>
+                            <constraint firstItem="cj2-zR-N0U" firstAttribute="top" secondItem="aJc-TZ-xtd" secondAttribute="bottom" constant="20" id="rhs-nk-dak"/>
+                            <constraint firstItem="B5l-ez-Rfd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wQq-iD-PNN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aJc-TZ-xtd" secondAttribute="trailing" constant="50" id="yCv-uM-4pZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="helpLabel" destination="0Ej-zA-olX" id="jjb-mi-sy9"/>
+                        <outlet property="poker1Image" destination="cQ3-4Y-lCA" id="90X-G1-el7"/>
+                        <outlet property="poker2Image" destination="cHI-LT-y7M" id="W2w-jT-qfu"/>
+                        <outlet property="poker3Image" destination="bpM-HQ-YpS" id="fm9-Jl-JR5"/>
+                        <outlet property="poker4Image" destination="rBT-Vv-Ddl" id="VoU-3G-9Ih"/>
+                        <outlet property="resultLabel" destination="iP3-Px-bsC" id="omI-46-bkH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="60" y="26.408450704225352"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1-clubs" width="105" height="150"/>
+        <image name="1-diamonds" width="105" height="150"/>
+        <image name="12-hearts" width="105" height="150"/>
+        <image name="2-spades" width="105" height="150"/>
+        <image name="background" width="667" height="621.5"/>
+        <image name="bin" width="28" height="28"/>
+        <image name="cross" width="28" height="28"/>
+        <image name="divide" width="28" height="28"/>
+        <image name="loop" width="28" height="28"/>
+        <image name="minus" width="28" height="28"/>
+        <image name="plus" width="28" height="28"/>
+        <image name="question" width="17" height="28"/>
+    </resources>
 </document>

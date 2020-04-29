@@ -14,6 +14,7 @@
 		B9C0D7322442A5D500EFE0C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9C0D7302442A5D500EFE0C4 /* LaunchScreen.storyboard */; };
 		B9C0D73D2442A5D500EFE0C4 /* _4_pointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C0D73C2442A5D500EFE0C4 /* _4_pointTests.swift */; };
 		B9C0D7482442A5D500EFE0C4 /* _4_pointUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C0D7472442A5D500EFE0C4 /* _4_pointUITests.swift */; };
+		B9C9453A2450D2CA00A16124 /* calculateLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C945392450D2CA00A16124 /* calculateLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B9C0D7432442A5D500EFE0C4 /* 24 pointUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "24 pointUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9C0D7472442A5D500EFE0C4 /* _4_pointUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _4_pointUITests.swift; sourceTree = "<group>"; };
 		B9C0D7492442A5D500EFE0C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9C945392450D2CA00A16124 /* calculateLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculateLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				B9C0D72E2442A5D500EFE0C4 /* Assets.xcassets */,
 				B9C0D7302442A5D500EFE0C4 /* LaunchScreen.storyboard */,
 				B9C0D7332442A5D500EFE0C4 /* Info.plist */,
+				B9C945392450D2CA00A16124 /* calculateLogic.swift */,
 			);
 			path = "24 point";
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				B9C0D72A2442A5D300EFE0C4 /* ViewController.swift in Sources */,
 				B9C0D7282442A5D300EFE0C4 /* AppDelegate.swift in Sources */,
+				B9C9453A2450D2CA00A16124 /* calculateLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
